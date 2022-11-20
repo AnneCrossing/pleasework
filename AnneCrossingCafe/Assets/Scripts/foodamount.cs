@@ -21,4 +21,5 @@ public class foodamount : MonoBehaviour {
 			Destroy(gameObject); //to not clutter space
 		}
 	}
+
 }

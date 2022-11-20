@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class anneupanddown : MonoBehaviour {
 	public int foodamount; // the health of the player, due to ingame the player losing a food eachtime they're hit, it's called food amount
@@ -33,10 +34,9 @@ public class anneupanddown : MonoBehaviour {
 			newpos = new Vector2(transform.position.x + changeinx, transform.position.y); 
 			transform.position = newpos;
 		}
-		else if foodamount = 0{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+
 		}
-	}
+
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.CompareTag("currency")) {
 			Destroy(other.gameObject);
