@@ -7,6 +7,7 @@ TagManager:
   - currency
   - cc
   - fa
+  - time
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - buff/debuff
+  - obstacle
+  - background
   - 
   - 
   - 

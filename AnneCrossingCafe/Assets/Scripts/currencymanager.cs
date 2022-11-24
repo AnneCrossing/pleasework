@@ -15,6 +15,6 @@ public class currencymanager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = totalcurrency.ToString(); //since it updates every second it can check for collisions
+		text.text = totalcurrency.ToString();
 	}
 }
