@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using pathfinding;
+using Pathfinding;
 
 public class fliplooking : MonoBehaviour {
-	public AIpath lookingright;
-	bool lookright = false;
+	public AIPath lookingright;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,16 +12,11 @@ public class fliplooking : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(lookingright.desiredvelocity.x >= 0.01f){
-			lookright==true;
+		if(lookingright.desiredVelocity.x >= 0.01f){
 			transform.Rotate(0, 180, 0);
-			lookright==false;
 		}
-		elseif(lookingright.desiredvelocity.x <= -0.01f) {
+		else if(lookingright.desiredVelocity.x <= -0.01f) {
 			transform.Rotate(0, 180, 0);
-			lookright==true;
-			transform.Rotate(0, 180, 0);
-			lookright==false;
 		}
 		
 	}

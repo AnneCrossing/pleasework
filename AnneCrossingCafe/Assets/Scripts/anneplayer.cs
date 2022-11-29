@@ -43,6 +43,9 @@ public class anneplayer : MonoBehaviour {
 				lookright = true;
 			}
 		}
+		if(Input.GetKey(KeyCode.Escape)){
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-3);
+		}
 
 		}
 
